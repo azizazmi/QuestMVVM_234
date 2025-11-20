@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
@@ -21,6 +22,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.prak6_mvvm.R
@@ -61,6 +63,13 @@ fun FormSiswa(
                 onValueChange = {
                     txtNama = it
                 }
+            )
+            HorizontalDivider(
+                modifier = Modifier
+                    .padding(all = 12.dp)
+                    .width(width = 250.dp),
+                thickness = dimensionResource(R.dimen.thickness_divider),
+                color = Color.Blue
             )
         }
 
