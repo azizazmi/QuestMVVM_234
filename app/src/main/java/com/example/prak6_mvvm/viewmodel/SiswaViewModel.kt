@@ -1,4 +1,9 @@
 package com.example.prak6_mvvm.viewmodel
 
-class SiswaViewModel {
+import androidx.lifecycle.ViewModel
+import com.example.prak6_mvvm.model.Siswa
+import kotlinx.coroutines.flow.MutableStateFlow
+
+class SiswaViewModel : ViewModel() {
+    private val _statusUI = MutableStateFlow(Siswa())
 }
