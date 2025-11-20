@@ -1,7 +1,6 @@
 package com.example.prak6_mvvm.viewmodel
 
 import androidx.lifecycle.ViewModel
-import androidx.room.util.copy
 import com.example.prak6_mvvm.model.Siswa
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
